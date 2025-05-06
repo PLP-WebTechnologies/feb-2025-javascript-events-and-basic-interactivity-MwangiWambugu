@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang ="eng">
+    <head>
+        <meta charset="UFT-8">  
+        <meta name ="viewport" content ="width=device width", initial-scale=1.0>
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Javascript Events and Basic Interactivity</title>
+    </head>
+    <body>
+        <button id="btn">Click Me!</button>
+        <p id="sentence">Welcome To My Slide Show.</p>	
+        
+        <div class = "slide-show" id ="slideshow" style="width: 500px; height: 500px; ">
+            <img class="slides" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600" style="display:block; ">
+            <img class="slides" src="https://images.pexels.com/photos/2950003/pexels-photo-2950003.jpeg?auto=compress&cs=tinysrgb&w=600" style="display:none;">
+            <img class="slides" src="https://images.pexels.com/photos/298842/pexels-photo-298842.jpeg?auto=compress&cs=tinysrgb&w=600" style="display:none;">
+        </div>
+        <div class="tab-buttons">
+            <button onclick="showTab(0)">Exterior</button>
+            <button onclick="showTab(1)">Door mat</button>
+            <button onclick="showTab(2)">Interior</button>
+        </div>
+          
+        <div class="tab" style="display: block;">The first thing you see is the exterior of the house. Such a beautiful angle</div>
+        <div class="tab">The door mat is a gives of warmth and comfort to the vistor </div>
+        <div class="tab">The interior of the home gives sanctuary to all those who inhabit it</div>
+
+          
+        <button class="accordion"  onclick="togglePanel(this)">Real Estate Market</button>
+        <div class="panel">Real estate is a sound investmet for all those looking to venture into it.</div>
+
+        <button class="accordion" onclick="togglePanel(this)">ROI</button>
+        <div class="panel">the RIO is usually dependent on the current economic climate and varies from region to region.</div>
+
+        <h3>Registration Form</h3>
+
+        <form id="signupForm" onsubmit="return validateForm()">
+        <label>Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <div id="emailFeedback" class="error"></div>
+
+        <label>Password:</label>
+        <input type="password" id="password" placeholder="At least 8 characters">
+        <div id="passwordFeedback" class="error"></div>
+
+        <button type="submit">Submit</button>
+        </form>
+
+        <script src="script.js" ></script>      
+    </body> 
+</html>

@@ -1,0 +1,61 @@
+.tab {
+    display: none;
+  }
+.tab-buttons button {
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    background: #eee;
+    margin-top: 5px;
+  }
+
+.panel {
+    display: none;
+    padding: 10px;
+    background: #f9f9f9;
+  }
+
+  input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 300px;
+  }
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  .valid {
+    color: green;
+  }
+
+  #btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  #sentence {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  /* Hover styles */
+  #btn:hover {
+    box-shadow: 0 0 20px #00f7ff, 0 0 30px #00f7ff;
+    cursor: pointer;
+  }
